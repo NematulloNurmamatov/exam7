@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import sideImg from "../../../assets/img/profile-img.jpg";
+import sideImg from "../../../assets/img/nematullo.png";
 import { AiOutlineHome, AiOutlineFile, AiOutlineMail } from "react-icons/ai";
 import { BiUser, BiServer } from "react-icons/bi";
 import { TbNotebook } from "react-icons/tb";
@@ -35,7 +35,7 @@ const Header = () => {
           <div className="profile">
             <img src={sideImg} alt="" className="img-fluid rounded-circle" />
             <h1 className="text-light">
-              <a href="index.html">Axtamov Jahongir</a>
+              <a href="index.html">Nematullo Nurmamatov</a>
             </h1>
           </div>
           <nav id="navbar" className="nav-menu navbar">
@@ -70,17 +70,6 @@ const Header = () => {
                     <AiOutlineFile />
                   </i>
                   <span>Resume</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className={hash === "#portfolio" ? "active" : ""}
-                  href="#portfolio"
-                >
-                  <i>
-                    <TbNotebook />
-                  </i>
-                  <span>Portfolio</span>
                 </a>
               </li>
               <li>
