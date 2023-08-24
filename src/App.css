@@ -1,0 +1,150 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i";
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+}
+
+a {
+  color: #149ddd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #37b3ed;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+.section-bg {
+  background: #f5f8fd;
+}
+
+.section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+.links {
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  border-radius: 10px;
+  background: #040b14;
+}
+
+@media (min-width: 1199px) {
+  .links {
+    top: 5px;
+    right: 30px;
+    left: auto;
+    z-index: 2;
+  }
+}
+
+.links svg {
+  font-size: 22px;
+}
+
+.links a {
+  font-weight: 700;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #a8a9b4;
+  transition: 0.3s;
+}
+
+.links .active {
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 5px;
+}
+
+.links .active svg {
+  font-size: 22px;
+  text-decoration: none;
+  color: #149ddd;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+@media (max-width: 400px) {
+  .links {
+    gap: 10px;
+  }
+  .links a {
+    font-size: 14px;
+  }
+  .links svg,
+  .links .active svg {
+    font-size: 13px;
+  }
+}
+
+#gtx-trans {
+  background-color: rgb(245, 245, 245);
+  box-sizing: inherit !important;
+  cursor: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  border: none !important;
+  z-index: 0 !important;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(220, 220, 220);
+  border-image: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+
+pre {
+    display: none !important;
+    font-family: monospace;
+    white-space: nowrap !important;
+    margin: 0 !important;
+}
